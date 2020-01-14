@@ -19,7 +19,7 @@ class NuevaCita extends Component {
 
   // Cuando el usuario escribe en los inputs
   handleChange = e => {
-    console.log(e.target.name + ': ' + e.target.value)
+    // console.log(e.target.name + ': ' + e.target.value)
 
     // colocar lo que el usuario escribe en el State
     this.setState({

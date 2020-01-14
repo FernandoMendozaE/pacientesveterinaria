@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ListaCitas from './ListaCitas'
 
-const Cita = ({ cita }) => {
+const Cita = ({ cita, eliminarCita }) => {
   return (
     <div className="media mt-3">
       <div className="media-body">
@@ -22,6 +22,12 @@ const Cita = ({ cita }) => {
           <span>Sintomas: </span>
         </p>
         <p className="card-text">{cita.sintomas}</p>
+
+        <button
+          className="btn btn-danger"
+          onClick={() => eliminarCita(cita.id)}>
+          Borrar &times;
+        </button>
       </div>
     </div>
   )
